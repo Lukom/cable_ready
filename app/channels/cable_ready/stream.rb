@@ -10,5 +10,7 @@ module CableReady
         locator.present? ? stream_from(locator) : reject
       end
     end
+  else
+    class Stream; end
   end
 end
